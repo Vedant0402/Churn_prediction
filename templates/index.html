@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Churn Predictor</title>
+</head>
+<body>
+  <h2>Customer Churn Prediction</h2>
+  <form action="/predict" method="post">
+    Tenure: <input type="number" name="tenure" step="any"><br>
+    Monthly Charges: <input type="number" name="monthlycharges" step="any"><br>
+    Total Charges: <input type="number" name="totalcharges" step="any"><br>
+    Senior Citizen (0 or 1): <input type="number" name="seniorcitizen"><br>
+    Contract Type (0=Month-to-month, 1=One year, 2=Two year): <input type="number" name="contract"><br>
+    Payment Method (0=Electronic, 1=Mailed, 2=Bank, 3=Credit card): <input type="number" name="paymentmethod"><br>
+    Internet Service (0=DSL, 1=Fiber optic, 2=None): <input type="number" name="internetservice"><br>
+    <input type="submit" value="Predict">
+  </form>
+</body>
+</html>
